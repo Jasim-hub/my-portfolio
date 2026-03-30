@@ -1,8 +1,6 @@
 import React from 'react'
 import './protfolio.css';
-import boxicons from 'boxicons';
 import image from "./image.jpg";
-import image2 from "./project 1.jpg";
 import image3 from "./website-img-2.webp";
 import image4 from "./website-img-4.jpg"
 const Protfolio = () => {
@@ -18,7 +16,7 @@ const Protfolio = () => {
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="#" className="btn">Resume</a>
+          <a href="https://drive.google.com/file/d/1SPhckVhrGi3DYkwgMIycF0aT5kWAp5Sf/view?usp=drive_link" className="btn">Resume</a>
         </nav>
       </header>
       <section className="home"id="home">
@@ -35,13 +33,12 @@ const Protfolio = () => {
               databases like MySQL and MongoDB and back-end like python and frameworks
                like djnago</p>
                <div className="social-icons">
-                <a href="#"><box-icon name='linkedin' type='logo' ></box-icon></a>
-                <a href="#"><box-icon type='logo' name='instagram'></box-icon></a>
-                <a href="#"><box-icon type='logo' name='twitter'></box-icon></a>
-                <a href="#"><box-icon type='logo' name='instagram'></box-icon></a>
+                <a href="www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+                <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
+                <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
                </div>
                <div className="btn-group">
-                <a href="#" className="btn">Hire</a>
+                <span className="btn">Hire</span>
                 <a href="#contact" className="btn">Contact</a>
                </div>
 
@@ -62,10 +59,8 @@ const Protfolio = () => {
             <div className="timeline-content">
               <h3>High School</h3>
               <p>
-                jkdgjbjhvytsdvhgvgfccghvnsbvdhfcn vbsxcvhg
-                snhjgchvn bc fsdchdsd bcfcsdvnvsdhgbds
-                ,snjbdcbn bszdvgvgdvnvhgbmndsbhvghvhnvnz
-                nz gvghdsvgv dznvhgvzn
+                Govt HSS Neduveli, Trivandrum<br/>
+                Commerce with Computer Application
               </p>
             </div>
           
@@ -73,15 +68,13 @@ const Protfolio = () => {
         <div className="timeline-item">
           <div className="timeline-dot"> </div>
             <div className="timeline-date">
-              2022
+              2024
             </div>
             <div className="timeline-content">
-              <h3>university</h3>
+              <h3>Kerala university</h3>
               <p>
-                jkdgjbjhvytsdvhgvgfccghvnsbvdhfcn vbsxcvhg
-                snhjgchvn bc fsdchdsd bcfcsdvnvsdhgbds
-                ,snjbdcbn bszdvgvgdvnvhgbmndsbhvghvhnvnz
-                nz gvghdsvgv dznvhgvzn
+                UIT Pirappancode, Trivandrum<br/>
+                B.Com with Computer Application
               </p>
             </div>
          
@@ -94,10 +87,8 @@ const Protfolio = () => {
             <div className="timeline-content">
               <h3>Internship</h3>
               <p>
-                jkdgjbjhvytsdvhgvgfccghvnsbvdhfcn vbsxcvhg
-                snhjgchvn bc fsdchdsd bcfcsdvnvsdhgbds
-                ,snjbdcbn bszdvgvgdvnvhgbmndsbhvghvhnvnz
-                nz gvghdsvgv dznvhgvzn
+                Kompentenzen Technologies,Trivandrum<br/>
+                Python Full Stack Developer Intern
               </p>
             </div>
           
@@ -108,13 +99,11 @@ const Protfolio = () => {
               2025
             </div>
             <div className="timeline-content">
-              <h3>job rec</h3>
+              <h3>Job Experience</h3>
               <p>
-                jkdgjbjhvytsdvhgvgfccghvnsbvdhfcn vbsxcvhg
-                snhjgchvn bc fsdchdsd bcfcsdvnvsdhgbds
-                ,snjbdcbn bszdvgvgdvnvhgbmndsbhvghvhnvnz
-                nz gvghdsvgv dznvhgvzn
-              </p>
+                EXATECH<br/>
+                Epub &#x0026; XML Developer
+                 </p>
             </div>
          
         </div>
@@ -128,11 +117,8 @@ const Protfolio = () => {
         <div className="service-container">
           <div className="service-box">
             <div className="service-info">
-              <h4>Ui design</h4>
-              <p>jhgdyugfvghcvdtyvcdvvdghvccuakgdwvevb gfcatcaj
-                nvHFytvewh chfg jca bv jhamvamjytfanb vb acchavna bv
-                nvcyuguuhjshgyuadbhjvka jbuygd  yweVGHTCVHA AHVTYUFJWE  
-                jaeinbjbuy amenbyyucvhg byugcvgdc jhjvdcghvd gyvvgh jh
+              <h4>UI Design</h4>
+              <p>UI/UX focuses on designing user-friendly, visually appealing, and easy-to-use digital interfaces that improve user experience and interaction.
               </p>
             </div>
           </div>
@@ -140,10 +126,7 @@ const Protfolio = () => {
           <div className="service-box">
             <div className="service-info">
               <h4>Frontend Development</h4>
-              <p>jhgdyugfvghcvdtyvcdvvdghvccuakgdwvevb gfcatcaj
-                nvHFytvewh chfg jca bv jhamvamjytfanb vb acchavna bv
-                nvcyuguuhjshgyuadbhjvka jbuygd  yweVGHTCVHA AHVTYUFJWE  
-                jaeinbjbuy amenbyyucvhg byugcvgdc jhjvdcghvd gyvvgh jh
+              <p>UI/UX focuses on designing user-friendly, visually appealing, and easy-to-use digital interfaces that improve user experience and interaction.
               </p>
             </div>
           </div>
@@ -151,10 +134,7 @@ const Protfolio = () => {
           <div className="service-box">
             <div className="service-info">
               <h4>Backend Development</h4>
-              <p>jhgdyugfvghcvdtyvcdvvdghvccuakgdwvevb gfcatcaj
-                nvHFytvewh chfg jca bv jhamvamjytfanb vb acchavna bv
-                nvcyuguuhjshgyuadbhjvka jbuygd  yweVGHTCVHA AHVTYUFJWE  
-                jaeinbjbuy amenbyyucvhg byugcvgdc jhjvdcghvd gyvvgh jh
+              <p>Backend Developer focused on building server-side logic, APIs, databases, and application functionality.
               </p>
             </div>
           </div>
@@ -162,10 +142,7 @@ const Protfolio = () => {
           <div className="service-box">
             <div className="service-info">
               <h4>React Develpoment </h4>
-              <p>jhgdyugfvghcvdtyvcdvvdghvccuakgdwvevb gfcatcaj
-                nvHFytvewh chfg jca bv jhamvamjytfanb vb acchavna bv
-                nvcyuguuhjshgyuadbhjvka jbuygd  yweVGHTCVHA AHVTYUFJWE  
-                jaeinbjbuy amenbyyucvhg byugcvgdc jhjvdcghvd gyvvgh jh
+              <p>React Developer skilled in building modern, responsive, and dynamic web applications using React.js.
               </p>
             </div>
           </div>
@@ -243,26 +220,25 @@ const Protfolio = () => {
         </section>
         <footer className="footer">
           <div className="social">
-          <a href="#"><box-icon name='linkedin' type='logo' ></box-icon></a>
-                <a href="#"><box-icon type='logo' name='instagram'></box-icon></a>
-                <a href="#"><box-icon type='logo' name='twitter'></box-icon></a>
-                <a href="#"><box-icon type='logo' name='instagram'></box-icon></a>
+          <a href="www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+                <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
+                 <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
           </div>
           <ul className="list">
             <li>
-              <a href="#">FAQ</a>
+              <a href="#menu-icon">FAQ</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#education">About Me</a>
             </li>
             <li>
-              <a href="#">Contact Me</a>
+              <a href="#menu-icon">Contact Me</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="projects">Projects</a>
             </li>
           </ul>
         </footer>
