@@ -1,5 +1,6 @@
 import React from 'react'
 import './protfolio.css';
+import boxicons from 'boxicons';
 import image from "./image.jpg";
 import image3 from "./website-img-2.webp";
 import image4 from "./website-img-4.jpg"
@@ -33,9 +34,10 @@ const Protfolio = () => {
               databases like MySQL and MongoDB and back-end like python and frameworks
                like djnago</p>
                <div className="social-icons">
-                <a href="www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+                <a href="https://www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+                <a href="https://wa.me/919744175614"><box-icon type='logo' name='whatsapp'></box-icon></a>
                 <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
-                <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
+                <a href="mailto:jasimr796@gmail.com"><box-icon name='envelope'></box-icon></a>
                </div>
                <div className="btn-group">
                 <span className="btn">Hire</span>
@@ -157,7 +159,7 @@ const Protfolio = () => {
                 <h3>project 1</h3>
                 <p>djhuygfevhjdvgjd hjdyudgdhj csd jhbJgybcf
                   jasim byvffybdhjg gyusvvudjhg hJGygdfvgvc 
-                  kjHIUhfc  JHGUYgfv jhGYUguygd jkIUHb BjhgDYUD 
+                  kjHIUhfc JHGUYgfv jhGYUguygd jkIUHb BjhgDYUD 
                   JBuhujHBB nVFtnB jhuygucb juygdjc
 
                 </p>
@@ -220,25 +222,26 @@ const Protfolio = () => {
         </section>
         <footer className="footer">
           <div className="social">
-          <a href="www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+          <a href="https://www.linkedin.com/in/jasim-r-52009b30a"><box-icon name='linkedin' type='logo' ></box-icon></a>
+                <a href="https://wa.me/919744175614"><box-icon type='logo' name='whatsapp'></box-icon></a>
                 <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
-                 <a href="https://www.instagram.com/_ja__sim___?igsh=MWx2MTc1YWZ0dHhnNA=="><box-icon type='logo' name='instagram'></box-icon></a>
+                <a href="mailto:jasimr796@gmail.com"><box-icon name='envelope'></box-icon></a>
           </div>
           <ul className="list">
             <li>
-              <a href="#menu-icon">FAQ</a>
+              <a href="#home">FAQ</a>
             </li>
             <li>
               <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#education">About Me</a>
+              <a href="#home">About Me</a>
             </li>
             <li>
-              <a href="#menu-icon">Contact Me</a>
+              <a href="#home">Contact Me</a>
             </li>
             <li>
-              <a href="projects">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
           </ul>
         </footer>
