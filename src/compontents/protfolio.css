@@ -1,3 +1,29 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 *{
     margin: 0;
     padding: 0;
@@ -112,13 +138,13 @@ span{
     line-height: 1;
 }
 .home-img{
-    border-radius: 50%;
+    border-radius: 30%;
 }
 .home-img img{
     position: relative;
     top:3rem;
     width: 32vw;
-    border-radius:50% ;
+    border-radius:45% ;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -466,6 +492,12 @@ span{
 }
 .project-card p{
     font-size: 1.6rem;
+    text-align: justify;
+}
+.project-card li{
+ font-size: 1.6rem;
+ text-align: justify;   
+ margin-top: 0.5em;
 }
 .contact{
     background-color: var(--bg-color);

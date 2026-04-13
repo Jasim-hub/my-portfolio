@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './protfolio.css';
 import image from "./image.jpg";
-import image3 from "./website-img-2.webp";
+import image3 from "./project 1.jpg";
+import image2 from "./project 2.jpg";
 import { FaEnvelope, FaInstagram, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
-import image4 from "./website-img-4.jpg"
+import emailjs from "@emailjs/browser";
+
 const Protfolio = () => {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_u7s2f3b",
+      "template_4cb50r5",
+      form.current,
+      {
+        publicKey: "G1ZKrqsmVcDiN8saY",
+      }
+    )
+    .then(() => {
+      alert("Thank you for visit my protfolio");
+      form.current.reset();
+    })
+    .catch((error) => {
+      alert("Failed to send");
+      console.log(error);
+    });
+  };
+
   return (
     <div className="pro">
       <header className="header">
@@ -156,66 +182,56 @@ const Protfolio = () => {
             
             <div className="project-card">
               <img src={image3}alt="jhc"/>
-                <h3>project 1</h3>
-                <p>djhuygfevhjdvgjd hjdyudgdhj csd jhbJgybcf
-                  jasim byvffybdhjg gyusvvudjhg hJGygdfvgvc 
-                  kjHIUhfc JHGUYgfv jhGYUguygd jkIUHb BjhgDYUD 
-                  JBuhujHBB nVFtnB jhuygucb juygdjc
+                <h3>Kerala Tourism Website</h3>
+                <p>Tech Stack: React.js, JavaScript, HTML, CSS, Bootstrap</p>
+                  <ul type="bullet">
+                  <li>Designed and developed a responsive tourism website to showcase Kerala destinations.</li>
+                  <li>Created a modern and visually appealing UI with mobile-friendly layouts</li>
+                  <li>Implemented interactive components for better user engagement.</li>
+                </ul>
 
-                </p>
+                
                 <div className="btn">Review Project</div>
                 </div>
 
                 <div className="project-card">
-              <img src={image3}alt="jhc"/>
-                <h3>project 2</h3>
-                <p>djhuygfevhjdvgjd hjdyudgdhj csd jhbJgybcf
-                  jasim byvffybdhjg gyusvvudjhg hJGygdfvgvc 
-                  kjHIUhfc  JHGUYgfv jhGYUguygd jkIUHb BjhgDYUD 
-                  JBuhujHBB nVFtnB jhuygucb juygdjc
+              <img src={image2}alt="jhc"/>
+                <h3>Weather Forecast Application</h3>
+                <p>Tech Stack: React.js, JavaScript, HTML, CSS, Bootstrap, OpenWeather API</p>
+                <ul type="bullet">
+                  <li>Developed a weather application with real-time weather updates.</li>
+                  <li>Integrated OpenWeather API to fetch temperature, humidity, and wind speed.</li>
+                  <li>Implemented API error handling and dynamic state management.</li>
+                </ul>
 
-                </p>
+                
                 <div className="btn">Review Project</div>
 
                 </div>
 
-                <div className="project-card">
-              <img src={image4}alt="jhc"/>
-                <h3>project 3</h3>
-                <p>djhuygfevhjdvgjd hjdyudgdhj csd jhbJgybcf
-                  jasim byvffybdhjg gyusvvudjhg hJGygdfvgvc 
-                  kjHIUhfc  JHGUYgfv jhGYUguygd jkIUHb BjhgDYUD 
-                  JBuhujHBB nVFtnB jhuygucb juygdjc
-
-                </p>
-                <div className="btn">Review Project</div>
-
-                </div> 
-            
-          </div>
-
+                </div>
 
         </section>
         <section className="contact"id="contact">
         <h2 className="heading">Contact <span>Me</span></h2>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="input-group">
             <div className="input-box">
-              <input type="text"
+              <input type="text" name="user_name"
               placeholder="Full Name"/>
-              <input type="email"
+              <input type="email" name="user_email"
               placeholder="Email"/>
             </div>
             <div className="input-box">
-              <input type="number"
+              <input type="number" name="user_number"
               placeholder="Phone number"/>
-              <input type="text" placeholder="subject" />
+              <input type="text" placeholder="subject" name="user_subject"/>
 
             </div>
           </div>
           <div className="input-group-2">
             <textarea cols="30"
-            rows="10"placeholder="your massage"/>
+            rows="10"placeholder="your massage" name="message"/>
             <input type="submit"className="btn" value="Send Message"/>
           </div>
         </form>
@@ -250,4 +266,4 @@ const Protfolio = () => {
   )
 }
 
-export default Protfolio
+export default Protfolio;
