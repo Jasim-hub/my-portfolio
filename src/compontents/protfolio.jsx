@@ -191,7 +191,7 @@ const Protfolio = () => {
                 </ul>
 
                 
-                <div className="btn">Review Project</div>
+                <a  href='https://my-kerala-tourism.vercel.app/'><div className="btn">Review Project</div></a>
                 </div>
 
                 <div className="project-card">
