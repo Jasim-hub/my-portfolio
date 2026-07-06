@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import './protfolio.css';
 import image from "./image.jpg";
 import image3 from "./project 1.jpg";
@@ -9,6 +9,25 @@ import emailjs from "@emailjs/browser";
 const Protfolio = () => {
   
   const form = useRef();
+  useEffect(() => {
+  const reveal = () => {
+    const elements = document.querySelectorAll(".reveal");
+
+    elements.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        element.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", reveal);
+  reveal();
+
+  return () => window.removeEventListener("scroll", reveal);
+}, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -46,8 +65,8 @@ const Protfolio = () => {
           <a href="https://drive.google.com/file/d/1SPhckVhrGi3DYkwgMIycF0aT5kWAp5Sf/view?usp=drive_link" className="btn">Resume</a>
         </nav>
       </header>
-      <section className="home"id="home">
-        <div className="home-content">
+      <section className="home" id="home">
+        <div className="home-content reveal">
           <h1>Hi, It's<span> Jasim</span></h1>
           <h3 className="text-animation">I'm a <span></span></h3>
           <p>I am a passionate and detail-oriented
@@ -71,15 +90,15 @@ const Protfolio = () => {
                </div>
 
         </div>
-        <div className="home-img">
+        <div className="home-img reveal">
           <img src={image}alt=""/>
 
         </div>
       </section>
     <div className="education" id="education">
-      <h2 className="heading">Education</h2>
+      <h2 className="heading  reveal">Education</h2>
       <div className="timeline-items">
-        <div className="timeline-item">
+        <div className="timeline-item reveal">
           <div className="timeline-dot"></div>
             <div className="timeline-date">
               2021
@@ -93,7 +112,7 @@ const Protfolio = () => {
             </div>
           
         </div>
-        <div className="timeline-item">
+        <div className="timeline-item reveal">
           <div className="timeline-dot"> </div>
             <div className="timeline-date">
               2024
@@ -107,7 +126,7 @@ const Protfolio = () => {
             </div>
          
         </div>
-        <div className="timeline-item">
+        <div className="timeline-item reveal">
           <div className="timeline-dot"></div>
             <div className="timeline-date">
               2024
@@ -121,7 +140,7 @@ const Protfolio = () => {
             </div>
           
         </div>
-        <div className="timeline-item">
+        <div className="timeline-item reveal">
           <div className="timeline-dot"> </div>
             <div className="timeline-date">
               2025
@@ -141,9 +160,9 @@ const Protfolio = () => {
       </div>
       </div>
       <section className="service"id="services">
-        <h2 className="heading">Services</h2>
+        <h2 className="heading  reveal">Services</h2>
         <div className="service-container">
-          <div className="service-box">
+          <div className="service-box  reveal">
             <div className="service-info">
               <h4>UI Design</h4>
               <p>UI/UX focuses on designing user-friendly, visually appealing, and easy-to-use digital interfaces that improve user experience and interaction.
@@ -151,7 +170,7 @@ const Protfolio = () => {
             </div>
           </div>
 
-          <div className="service-box">
+          <div className="service-box  reveal">
             <div className="service-info">
               <h4>Frontend Development</h4>
               <p>UI/UX focuses on designing user-friendly, visually appealing, and easy-to-use digital interfaces that improve user experience and interaction.
@@ -159,7 +178,7 @@ const Protfolio = () => {
             </div>
           </div>
 
-          <div className="service-box">
+          <div className="service-box  reveal">
             <div className="service-info">
               <h4>Backend Development</h4>
               <p>Backend Developer focused on building server-side logic, APIs, databases, and application functionality.
@@ -167,7 +186,7 @@ const Protfolio = () => {
             </div>
           </div>
 
-          <div className="service-box">
+          <div className="service-box  reveal">
             <div className="service-info">
               <h4>React Develpoment </h4>
               <p>React Developer skilled in building modern, responsive, and dynamic web applications using React.js.
@@ -177,10 +196,10 @@ const Protfolio = () => {
         </div>
         </section> 
         <section className="projects" id = "projects">
-        <h2 className="heading">Projects</h2>
+        <h2 className="heading reveal">Projects</h2>
           <div className="projects-box">
             
-            <div className="project-card">
+            <div className="project-card reveal">
               <img src={image3}alt="jhc"/>
                 <h3>Kerala Tourism Website</h3>
                 <p>Tech Stack:JavaScript, HTML, CSS, Bootstrap</p>
@@ -194,8 +213,8 @@ const Protfolio = () => {
                 <a  href='https://keralatourism-blond.vercel.app/'><div className="btn">Review Project</div></a>
                 </div>
 
-                <div className="project-card">
-              <img src={image2}alt="jhc"/>
+                <div className="project-card reveal">
+              <img src={image2} alt="jhc"/>
                 <h3>Weather Forecast Application</h3>
                 <p>Tech Stack: React.js, JavaScript, HTML, CSS, Bootstrap, OpenWeather API</p>
                 <ul type="bullet">
@@ -213,9 +232,9 @@ const Protfolio = () => {
 
         </section>
         <section className="contact"id="contact">
-        <h2 className="heading">Contact <span>Me</span></h2>
+        <h2 className="heading reveal">Contact <span>Me</span></h2>
         <form ref={form} onSubmit={sendEmail}>
-          <div className="input-group">
+          <div className="input-group  reveal">
             <div className="input-box">
               <input type="text" name="user_name"
               placeholder="Full Name"/>
@@ -229,7 +248,7 @@ const Protfolio = () => {
 
             </div>
           </div>
-          <div className="input-group-2">
+          <div className="input-group-2  reveal">
             <textarea cols="30"
             rows="10"placeholder="your massage" name="message"/>
             <input type="submit"className="btn" value="Send Message"/>
