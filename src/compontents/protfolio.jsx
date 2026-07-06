@@ -183,7 +183,7 @@ const Protfolio = () => {
             <div className="project-card">
               <img src={image3}alt="jhc"/>
                 <h3>Kerala Tourism Website</h3>
-                <p>Tech Stack: React.js, JavaScript, HTML, CSS, Bootstrap</p>
+                <p>Tech Stack:JavaScript, HTML, CSS, Bootstrap</p>
                   <ul type="bullet">
                   <li>Designed and developed a responsive tourism website to showcase Kerala destinations.</li>
                   <li>Created a modern and visually appealing UI with mobile-friendly layouts</li>
@@ -191,7 +191,7 @@ const Protfolio = () => {
                 </ul>
 
                 
-                <a  href='https://my-kerala-tourism.vercel.app/'><div className="btn">Review Project</div></a>
+                <a  href='https://keralatourism-blond.vercel.app/'><div className="btn">Review Project</div></a>
                 </div>
 
                 <div className="project-card">
